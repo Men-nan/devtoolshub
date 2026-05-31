@@ -1,36 +1,74 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🛠️ DevToolsHub
 
-## Getting Started
+免费在线开发者工具集合。无需注册，即开即用，所有数据在浏览器本地处理。
 
-First, run the development server:
+## 功能工具
+
+| 工具 | 说明 |
+|------|------|
+| 📄 JSON 格式化 | 格式化、校验、压缩 JSON 数据 |
+| 🔐 Base64 编解码 | 文本 Base64 编码与解码 |
+| 🔗 URL 编解码 | URL/URI 组件编码与解码 |
+| 🔢 哈希生成器 | SHA-1/SHA-256/SHA-384/SHA-512 哈希 |
+| 🧪 正则测试器 | 实时正则表达式匹配与高亮 |
+| 🎨 颜色转换器 | HEX/RGB/HSL 颜色格式互转 |
+| 🆔 UUID 生成器 | 批量生成 UUID v4 |
+| 🔑 密码生成器 | 可配置强度的安全密码生成 |
+| ⏰ 时间戳转换 | Unix 时间戳与日期互转 |
+| 📝 文本对比 | 文本差异对比与高亮 |
+
+## 技术栈
+
+- **Next.js 14** (App Router)
+- **TypeScript**
+- **Tailwind CSS**
+- **Vercel** 部署
+
+## 快速开始
 
 ```bash
+# 安装依赖
+npm install
+
+# 开发模式
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# 构建
+npm run build
+
+# 启动
+npm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 部署到 Vercel
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm i -g vercel
+vercel
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 项目结构
 
-## Learn More
+```
+src/
+├── app/                    # Next.js App Router 页面
+│   ├── page.tsx           # 首页
+│   └── tools/             # 工具页面
+├── components/             # React 组件
+│   ├── Header.tsx         # 导航栏
+│   ├── Footer.tsx         # 页脚
+│   ├── ToolLayout.tsx     # 工具页布局
+│   └── AdSlot.tsx         # 广告位
+└── lib/
+    └── tools.ts           # 工具注册表
+```
 
-To learn more about Next.js, take a look at the following resources:
+## 变现策略
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Google AdSense 广告
+- Carbon Ads（开发者受众）
+- 联盟营销链接
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## License
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+MIT
