@@ -2,7 +2,7 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #111827;
 }
 
 @theme inline {
@@ -12,8 +12,27 @@
   --font-mono: var(--font-geist-mono);
 }
 
+html {
+  color-scheme: light;
+}
+
 body {
-  background: var(--background);
-  color: var(--foreground);
+  background: #ffffff;
+  color: #111827;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* 强制输入框和文本域使用浅色 */
+input, textarea, select {
+  background-color: #ffffff !important;
+  color: #111827 !important;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #9ca3af !important;
+}
+
+/* 强制 code 标签使用深色文字 */
+code {
+  color: #111827 !important;
 }

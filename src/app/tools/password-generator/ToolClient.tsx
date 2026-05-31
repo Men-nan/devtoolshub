@@ -65,7 +65,7 @@ export default function PasswordGeneratorClient() {
       <div className="space-y-4">
         {/* Password Display */}
         <div className="flex items-center gap-3 p-4 bg-gray-50 rounded-lg border border-gray-200">
-          <code className="flex-1 font-mono text-lg break-all">{password || "点击生成按钮..."}</code>
+          <code className="flex-1 font-mono text-lg break-all text-gray-900">{password || "点击生成按钮..."}</code>
           {password && (
             <button onClick={copy} className={`px-4 py-2 rounded-lg text-sm font-medium ${copied ? "bg-green-600 text-white" : "bg-gray-600 text-white hover:bg-gray-700"}`}>
               {copied ? "已复制!" : "复制"}
