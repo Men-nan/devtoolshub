@@ -2,24 +2,7 @@
 
 ## 🔍 搜索引擎提交
 
-### 1. Google Search Console
-
-**步骤：**
-1. 访问 [Google Search Console](https://search.google.com/search-console)
-2. 点击「添加资源」
-3. 选择「网址前缀」
-4. 输入: `https://men-nan.github.io/devtoolshub/`
-5. 验证方式：选择「HTML 文件」
-6. 下载验证文件，放到 `out/` 目录
-7. 重新部署到 GitHub Pages
-8. 点击「验证」
-
-**提交 Sitemap:**
-1. 左侧菜单选择「站点地图」
-2. 输入: `sitemap.xml`
-3. 点击「提交」
-
-### 2. Bing Webmaster
+### 1. Bing Webmaster（可用 ✅）
 
 **步骤：**
 1. 访问 [Bing Webmaster Tools](https://www.bing.com/webmasters)
@@ -36,7 +19,7 @@
 2. 输入: `https://men-nan.github.io/devtoolshub/sitemap.xml`
 3. 点击「提交」
 
-### 3. 百度站长平台
+### 2. 百度站长平台（可用 ✅）
 
 **步骤：**
 1. 访问 [百度站长平台](https://ziyuan.baidu.com)
@@ -53,6 +36,21 @@
 1. 左侧菜单选择「链接提交」→「自动提交」→「sitemap」
 2. 输入: `https://men-nan.github.io/devtoolshub/sitemap.xml`
 3. 点击「提交」
+
+### 3. 360 搜索站长平台（推荐补充）
+
+**步骤：**
+1. 访问 [360 搜索站长平台](https://zhanzao.so.com)
+2. 使用 360 账号登录
+3. 添加网站并验证
+4. 提交 sitemap
+
+### 4. Google Search Console（需科学上网）
+
+> ⚠️ Google 在中国大陆无法直接访问。如需提交：
+> - 使用代理/VPN 访问: https://search.google.com/search-console
+> - 或通过手机热点访问
+> - Bing + 百度 已覆盖 90%+ 中文搜索流量
 
 ---
 
@@ -92,19 +90,19 @@
 
 ### 监控工具
 
-1. **Google Analytics**
-   - 访问: https://analytics.google.com/
+1. **百度统计**
+   - 访问: https://tongji.baidu.com/
    - 添加跟踪代码到 `layout.tsx`
 
-2. **Google Search Console**
+2. **Bing Webmaster Tools**
    - 监控搜索表现
    - 查看索引状态
    - 发现错误
 
-3. **Ahrefs / SEMrush**
-   - 关键词排名监控
-   - 竞争对手分析
-   - 反向链接监控
+3. **百度站长平台**
+   - 监控百度搜索表现
+   - 查看关键词排名
+   - 抓取诊断
 
 ### 关键指标
 
@@ -119,9 +117,9 @@
 ## 📅 内容更新计划
 
 ### 第一周
-- [x] 提交 Google Search Console
-- [x] 提交 Bing Webmaster
-- [x] 提交百度站长平台
+- [ ] 提交 Bing Webmaster
+- [ ] 提交百度站长平台
+- [ ] 提交 360 站长平台
 
 ### 第二周
 - [ ] 发布掘金文章
@@ -143,22 +141,22 @@
 ## 🎯 预期效果
 
 ### 1 个月后
-- Google 收录 10+ 页面
+- Bing + 百度收录 10+ 页面
 - 日均访问 50-100
 - 开始获得自然搜索流量
 
 ### 3 个月后
-- Google 收录 30+ 页面
+- Bing + 百度收录 30+ 页面
 - 日均访问 500-1000
 - 部分关键词进入前 100
 
 ### 6 个月后
-- Google 收录 50+ 页面
+- Bing + 百度收录 50+ 页面
 - 日均访问 2000-5000
 - 核心关键词进入前 50
 
 ### 12 个月后
-- Google 收录 100+ 页面
+- Bing + 百度收录 100+ 页面
 - 日均访问 10000+
 - 核心关键词进入前 20
 - 开始产生广告收入
