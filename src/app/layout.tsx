@@ -29,6 +29,13 @@ export const metadata: Metadata = {
   },
 };
 
+// Bing Webmaster 验证
+declare global {
+  interface Window {
+    MSBingAsyncInit?: () => void;
+  }
+}
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -40,6 +47,9 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
       style={{ colorScheme: 'light' }}
     >
+      <head>
+        <meta name="msvalidate.01" content="F7A3875FF6BF44319CD8FCC299196B6C" />
+      </head>
       <body className="min-h-full flex flex-col bg-white text-gray-900">
         <Header />
         <div className="flex-1">{children}</div>
